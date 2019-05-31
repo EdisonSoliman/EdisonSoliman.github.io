@@ -9,6 +9,23 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <!--Cookie Monster code-->
+  <script type = "text/javascript">
+    <!--
+       var imgObj = null;
+
+       function init() {
+          imgObj = document.getElementById('cookie');
+          imgObj.style.position= 'relative';
+          imgObj.style.left = '0px';
+       }
+       function moveRight() {
+          imgObj.style.left = parseInt(imgObj.style.left) + 50 + 'px';
+       }
+
+       window.onload = init;
+    //-->
+ </script>
 </head>
 
 <body>
@@ -75,7 +92,21 @@
       even though I have yet to see one in real life. So currently one of my life goals is to see one sometime.
       </p>
     </div>
-
+    <!--Added Cookie Monster-->
+    <div class="row">
+      <div class="col-md-3">
+        <form>
+                  <h2>Click to Feed</h2>
+                  <br>
+                </br>
+                <img id = "cookie" src = "Cookie.png" style="width:80%" />
+                <input type = "button" value = "Feed Him" onclick = "moveRight();" />
+             </form>
+      </div>
+      <div class="col-md-3 offset-md-6">
+               <img src="Monster.png" style="width:110%">
+       </div>
+     </div>
     <!-- Adding my about me section - Diego-->
     <div id="Diego">
        <h1 class="diegoName">Diego Guzman</h1>
