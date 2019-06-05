@@ -34,6 +34,7 @@
 
 <body>
     <!--nav bar implemented-Wyatt-->
+    <div id="navbar-top"> 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
         <!-- Links -->
         <ul class="navbar-nav">
@@ -48,6 +49,7 @@
             </li>
         </ul>
     </nav>
+  </div>
     <!--Title-->
     <div>
         <h1 class="text-center">Fortunate Gang</h1>
@@ -69,10 +71,10 @@
         window.onscroll = function(){scrollFunction()};
 
           function scrollFunction() {
-               if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-               document.getElementById("navbar").style.padding = "20px 10px";                  
+               if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+               document.getElementById("navbar-top").style.padding = "20px 10px";                  
             } else {
-             document.getElementById("navbar").style.padding = "40px 10px";
+             document.getElementById("navbar-top").style.padding = "40px 10px";
                      }
                               }
         
