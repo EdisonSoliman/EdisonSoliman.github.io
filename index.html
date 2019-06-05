@@ -63,17 +63,19 @@
     <div>
         <p>Hi, I'm Wyatt Olson, I am a first year student at UW Bothell. I am hoping to pursue the <strong>IMD Major</strong> as it combines many of my areas of interest, art and computer science. In my free time I work as a line cook at the <span style="color:rgb(1, 46, 88);font-weight:bold">Beach House Bar&Grill</span>            in Kirkland and do freelance photography.</p>
     </div>
-    <div><button id="button">Button</div>
+    <div><button id="button">Button</button></div>
           
       <script>
-          setTimeout(function () {
-            var button = document.getElementById("button");
+        window.onscroll = function(){scrollFunction()};
+
+          function scrollFunction() {
+               if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+               document.getElementById("navbar").style.padding = "20px 10px";                  
+            } else {
+             document.getElementById("navbar").style.padding = "40px 10px";
+                     }
+                              }
         
-            button.style.backgroundImage = "url('http://edisonsoliman.com/wp-content/uploads/2019/05/Heaven.jpg')";
-            button.style.backgroundRepeat = "no-repeat";
-            
-        }, 2000;
-        button.onclick = function;
         </script>
       
 
