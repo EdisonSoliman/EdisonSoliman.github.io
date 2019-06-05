@@ -16,6 +16,10 @@
 
 }
 
+#button {
+  background-image: url('http://www.rww.co.za/wp-content/uploads/2018/01/RWW-background-1.jpg');
+}
+
 .active, .collapsible:hover {
   background-color: #555;
 }

@@ -12,20 +12,20 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--Cookie Monster code-->
     <script type="text/javascript">
-        //<!--
-        //var imgObj = null;
+        <!--
+        var imgObj = null;
 
-       // function init() {
-            //imgObj = document.getElementById('cookie');
-           // imgObj.style.position = 'relative';
-           // imgObj.style.left = '0px';
-       // }
+        function init() {
+            imgObj = document.getElementById('cookie');
+            imgObj.style.position = 'relative';
+            imgObj.style.left = '0px';
+        }
 
-       // function moveRight() {
-        //    imgObj.style.left = parseInt(imgObj.style.left) + 50 + 'px';
-      //  }
+        function moveRight() {
+            imgObj.style.left = parseInt(imgObj.style.left) + 50 + 'px';
+        }
 
-     //   window.onload = init;
+        window.onload = init;
         //-->
     </script>
 </head>
@@ -61,18 +61,17 @@
     <div>
         <p>Hi, I'm Wyatt Olson, I am a first year student at UW Bothell. I am hoping to pursue the <strong>IMD Major</strong> as it combines many of my areas of interest, art and computer science. In my free time I work as a line cook at the <span style="color:rgb(1, 46, 88);font-weight:bold">Beach House Bar&Grill</span>            in Kirkland and do freelance photography.</p>
     </div>
-    <div>
+    <button id="button">Button</div>
+    
+    <script>
+      setTimeout(function () {
+    var button = document.getElementById("button");
 
-        <script>
-            var arr = [0]; <form>
-                <input id = "degrees" type = "text" placeholder = "Amount" > </input>            
-            arr[0] = "degrees"; </form>              
-            arr.forEach(function(element) {
-                        System.out.println(elem + " Fahrenheit is approximatly " + ((elem - 32) * 5 / 9) + " Celcius");
-                    }
-        </script>
-
-    </div>
+    button.style.backgroundImage = "url('http://edisonsoliman.com/wp-content/uploads/2019/05/MG_4275.jpg')";
+    button.style.backgroundRepeat = "no-repeat";
+}, 2000);
+    </script>
+    
     <!-- Adding my about me section-Edison-->
     <div id="Edison">
         <h1 class="EdisonName">Edison Soliman</h1>
