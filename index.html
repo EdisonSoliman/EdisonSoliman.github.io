@@ -63,15 +63,24 @@
     </div>
     <div>
       <div>
-        <button onclick="document.getElementById('myImage').src='edisonsoliman.com/wp-content/uploads/2019/05/Heaven.jpg'">on</button>
+          <button id="button">Button</div>
+        <script>
+          setTimeout(function () {
+            var button = document.getElementById("button");
+        
+            button.style.backgroundImage = "url('http://edisonsoliman.com/wp-content/uploads/2019/05/Heaven.jpg')";
+            button.style.backgroundRepeat = "no-repeat";
+        }, 2000);
+        </script>
+      </div>
+
+       <!-- 
+         <button onclick="document.getElementById('myImage').src='edisonsoliman.com/wp-content/uploads/2019/05/Heaven.jpg'">on</button>
 
         <img id="myImage" src="www.rww.co.za/wp-content/uploads/2018/01/RWW-background-1.jpg" style="width: 100%">
         
         <button onclick="document.getElementById('myImage').src='www.rww.co.za/wp-content/uploads/2018/01/RWW-background-1.jpg'">off</button>
-        
-      </div>
-
-       <!-- <script>
+         <script>
             var arr = [0]; <form>
                 <input id = "degrees" type = "text" placeholder = "Amount" > </input>            
             arr[0] = "degrees"; </form>              
